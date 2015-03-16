@@ -105,19 +105,24 @@ class TweenHelper():
 	easetype = 0
 	steps = 0
 	tweentype = 0
-	def __init__(self,sp,tt,en,ti,et):
+	def __init__(self,sp=None,tt=0,en=(0,0),ti=0,et=0):
 		self.sprite = sp
 		self.end = en
 		self.time = ti
-		if tt==POSITION_TWEEN:
-			self.start = self.sprite.rect.center
-		elif tt==SIZE_TWEEN:
-			self.start = self.sprite.rect.size
-		elif tt==COLOR_TWEEN:
-			self.start = self.sprite.color
+		if not sp==None:	
+			if tt==POSITION_TWEEN:
+				self.start = self.sprite.rect.center
+			elif tt==SIZE_TWEEN:
+				self.start = self.sprite.rect.size
+			elif tt==COLOR_TWEEN:
+				self.start = self.sprite.color
 		self.current = self.start
 		self.easetype = et
 		self.tweentype=tt
+	def wipeTweens(self,obj):
+		for tween in tweenhelpers:
+			if tween.sprite==obj:
+				tweenhelpers.remove(tween)
 	def step(self,seconds):
 		
 
@@ -297,6 +302,11 @@ menu = pygame.sprite.Group()
 menuhovered = pygame.sprite.Group()
 menuhovered2 = pygame.sprite.Group()
 
+collectionpane = pygame.sprite.Group()
+panehovered = pygame.sprite.Group()
+panezoomed = pygame.sprite.Group()
+deckpane = pygame.sprite.Group()
+
 tweenhelpers = []
 
 base_stats = [10,10,10,10,10,10,10,10,10,10]
@@ -329,6 +339,8 @@ ccselect = False
 cckey = ""
 ingame = False
 flavorscreen = False
+deckbuilder = False
+deckbuilderpage = 0
 
 txtbx = None
 
@@ -489,6 +501,14 @@ def drawCard(card, cardplace):
 			offsety += heights[index]*0.75
 			index+=1
 
+def cardSpriteType(obj):
+	import inspect, types
+	if isinstance(obj, OptionCard):
+		return "option"
+	else:
+		return "card"
+
+
 while not done:
 	optionpicked = False
 	events = pygame.event.get()
@@ -497,8 +517,8 @@ while not done:
 			done = True
 		if et.type == pygame.MOUSEBUTTONUP:
 			pos = pygame.mouse.get_pos()
-			for option in menu:
-				if option.rect.collidepoint(pos) and not option.disabled and not option.display:
+			for option in menuhovered.sprites() + panehovered.sprites():
+				if option.rect.collidepoint(pos) and not option.disabled and not option.display and cardSpriteType(option.card)=="option":
 					optionpicked = option.card.value
 					print 'picked: ' + optionpicked
 
@@ -511,7 +531,8 @@ while not done:
 		elif flavorscreen=="main" and optionpicked=="finalize":
 			flavorscreen = False
 			menu.empty()
-			ingame = True
+			menuhovered.empty()
+			deckbuilder = "initial"
 		elif ccselect and optionpicked=="Races":
 			ccselect = "initraces"
 		elif ccselect and optionpicked=="Classes":
@@ -523,6 +544,7 @@ while not done:
 				ccselect = "initcc"
 			elif ccselect == "ccmain":
 				menu.empty()
+				menuhovered.empty()
 				menu.add(CardSprite(OptionCard("Create a new character","new"),(600,200)))
 				menu.add(CardSprite(OptionCard("Load an existing character","load"),(600,500)))
 				tweenhelpers.append(TweenHelper(menu.sprites()[0],POSITION_TWEEN,menu.sprites()[0].menuspot,0.2,SLIDE_EASE))
@@ -574,6 +596,7 @@ while not done:
 	if flavorscreen:
 		if flavorscreen=="init":
 			menu.empty()
+			menuhovered.empty()
 			txtbx = eztext.Input(maxlength=13,color=(0,0,0),y=200,x=100,prompt='Name: ')
 			txtbx.focus = True
 			flavorscreen = "main"
@@ -585,15 +608,49 @@ while not done:
 		elif flavorscreen=="main":
 			a = txtbx.update(events)
 			if len(a)>0:
-				menu.sprites()[0].disabled = False
+				if bool(menu):
+					menu.sprites()[0].disabled = False
+				else:
+					menuhovered.sprites()[0].disabled = False
 			else:
-				menu.sprites()[0].disabled = True
+				if bool(menu):
+					menu.sprites()[0].disabled = True
+				else:
+					menuhovered.sprites()[0].disabled = True
 
+	
+
+	if deckbuilder:
+		if deckbuilder=="initial":
+			collectionpane.empty()
+			deckpane.empty()
+			index = 0
+			for card in collection:
+				if index<(rows*columns)-1:
+					print card.name+" made"
+					modifier = 0
+					if int(math.floor(index/columns))>0:
+						modifier = -1*columns*int(math.floor(index/columns))
+					sprite = CardSprite(card,((acrosspoints*(index+modifier))+(acrosspoints/2),(vertpoints*int(math.floor(index/columns)))+(vertpoints/2)))
+					collectionpane.add(sprite)
+					tweenhelpers.append(TweenHelper(sprite,POSITION_TWEEN,sprite.menuspot,0.1,SLIDE_EASE))
+					index += 1
+				elif index==(rows*columns)-1:
+					print "next page button made"
+					modifier = 0
+					if int(math.floor(index/columns))>0:
+						modifier = -1*columns*int(math.floor(index/columns))
+					sprite = CardSprite(OptionCard("Next Page","next"),((acrosspoints*(index+modifier))+(acrosspoints/2),(vertpoints*int(math.floor(index/columns)))+(vertpoints/2)))
+					collectionpane.add(sprite)
+					tweenhelpers.append(TweenHelper(sprite,POSITION_TWEEN,sprite.menuspot,0.1,SLIDE_EASE))
+					index += 1
+			deckbuilder = "initialmain"
 
 
 	if ccselect:
 		if ccselect=="initcc":
 			menu.empty()
+			menuhovered.empty()
 			initiateCCDB("ccoptions.xml")
 			index = 0
 			for key in allcc:
@@ -612,6 +669,7 @@ while not done:
 			ccselect="ccmain"
 		elif ccselect=="initraces":
 			menu.empty()
+			menuhovered.empty()
 			index = 0
 			for key in allcc["Races"]:
 				modifier = 0
@@ -627,6 +685,7 @@ while not done:
 			ccselect="racesmain"
 		elif ccselect=="initclasses":
 			menu.empty()
+			menuhovered.empty()
 			index = 0
 			for key in allcc["Classes"]:
 				modifier = 0
@@ -642,6 +701,7 @@ while not done:
 			ccselect="classesmain"
 		elif ccselect=="initracecategory":
 			menu.empty()
+			menuhovered.empty()
 			index = 0
 			for key in allcc["Races"][cckey]:
 				modifier = 0
@@ -657,6 +717,7 @@ while not done:
 			ccselect="racecategorymain"
 		elif ccselect=="initclasscategory":
 			menu.empty()
+			menuhovered.empty()
 			index = 0
 			for key in allcc["Classes"][cckey]:
 				modifier = 0
@@ -672,6 +733,7 @@ while not done:
 			ccselect="classcategorymain"
 		elif ccselect=="create":
 			menu.empty()
+			menuhovered.empty()
 			for the_info in allcc["Races"][info[3]][info[1]]:
 				name = the_info[0]
 				amt = the_info[1]
@@ -685,6 +747,7 @@ while not done:
 			ccselect = "initstats"
 		elif ccselect=="initstats":
 			menu.empty()
+			menuhovered.empty()
 			index = 0
 			for i in range(0,10):
 				sprite = CardSprite(OptionCard("+","+"+str(i)),(700,(i*65)+65))
@@ -735,7 +798,7 @@ while not done:
 		statid = updateStat-1
 		dis = False
 		dos = False
-		for card in menu:
+		for card in menu.sprites() + menuhovered.sprites():
 			if card.card.value==str(statid):
 				card.card.text = str(stats[statid])
 				if stats[statid]==base_stats[statid]:
@@ -744,7 +807,7 @@ while not done:
 					dos = True
 			if card.card.value=="points":
 				card.card.text = "Points Left: "+str(points_to_spend)
-		for card in menu:
+		for card in menu.sprites() + menuhovered.sprites():
 			if card.card.value=="-"+str(statid):
 				card.disabled = dis
 				if dis:	
@@ -756,7 +819,7 @@ while not done:
 
 
 		if points_to_spend==0:
-			for card in menu:
+			for card in menu.sprites() + menuhovered.sprites():
 				if not card.card.value=="":
 					if card.card.value[0]=="+":
 						card.disabled = True
@@ -767,7 +830,7 @@ while not done:
 						card.colored = True
 
 		else:
-			for card in menu:
+			for card in menu.sprites() + menuhovered.sprites():
 				if not card.card.value=="":
 					if card.card.value[0]=="+":
 						if not stats[int(card.card.value[1])]==base_stats[int(card.card.value[1])]+2:
@@ -808,6 +871,8 @@ while not done:
 			tweenhelpers.append(TweenHelper(card,POSITION_TWEEN,(50,(points*hand.index(card.card))+75),0.3,SLIDE_EASE))
 			index+=1
 
+	
+
 	for card in card_list:
 			if card.rect.collidepoint(pygame.mouse.get_pos()) and not card.animating and not bool(top_card):
 				tweenhelpers.append(TweenHelper(card,SIZE_TWEEN,(200,200),0.1,SLIDE_EASE))
@@ -819,8 +884,11 @@ while not done:
 		card_list.add(top_card.sprites()[0])
 		top_card.empty()
 
-	for card in menu:
-		if (opening_menu or ccselect or flavorscreen) and card.rect.collidepoint(pygame.mouse.get_pos()) and not card.disabled and not card.display and not card.animating and not pygame.mouse.get_pressed()[0]:
+	for card in menu.sprites()+menuhovered.sprites():
+		if (opening_menu or ccselect or flavorscreen) and card.rect.collidepoint(pygame.mouse.get_pos()) and not bool(menuhovered) and not card.disabled and not card.display and not card.animating and not pygame.mouse.get_pressed()[0]:
+			menuhovered.add(card)
+			menu.remove(card)
+			print card.card.text + " moused over"
 			bigsize = 300
 			if ccselect=="statsmain":
 				bigsize=100
@@ -829,9 +897,11 @@ while not done:
 			tweenhelpers.append(TweenHelper(card,SIZE_TWEEN,(bigsize,bigsize),0.1,SLIDE_EASE))
 			tweenhelpers.append(TweenHelper(card,POSITION_TWEEN,card.menuspot,0.1,SLIDE_EASE))
 			tweenhelpers.append(TweenHelper(card,COLOR_TWEEN,(255,255,100,255),0.1,SLIDE_EASE))
-			menuhovered2.add(card)
-		elif (opening_menu or ccselect or flavorscreen) and (not card.display and not card.animating and not card.rect.collidepoint(pygame.mouse.get_pos())) or (not card.animating and card.disabled):
+		elif (opening_menu or ccselect or flavorscreen) and (((not card.display and not card.animating and not card.rect.collidepoint(pygame.mouse.get_pos())) or (not card.animating and card.disabled))) or (menuhovered.has(card) and not card.animating and not card.rect.collidepoint(pygame.mouse.get_pos())):
+			print card.card.text + " moused off"
 			normsize = 150
+			menu.add(card)
+			menuhovered.remove(card)
 			if ccselect=="statsmain":
 				normsize=50
 				if card.card.value=="done":
@@ -844,8 +914,45 @@ while not done:
 				tweenhelpers.append(TweenHelper(card,COLOR_TWEEN,card.colorspot,0.1,SLIDE_EASE))
 			elif card.disabled:
 				tweenhelpers.append(TweenHelper(card,COLOR_TWEEN,(100,10,10,255),0.2,SLIDE_EASE))
-			menuhovered.empty()
-			menuhovered2.empty()
+
+
+	for card in collectionpane.sprites() + panehovered.sprites():
+		if deckbuilder and card.rect.collidepoint(pygame.mouse.get_pos()) and not bool(panehovered) and not card.disabled and not card.display and not card.animating and not pygame.mouse.get_pressed()[0]:
+			tweenhelpers.append(TweenHelper(card,SIZE_TWEEN,(175,175),0.1,SLIDE_EASE))
+			tweenhelpers.append(TweenHelper(card,POSITION_TWEEN,card.menuspot,0.1,SLIDE_EASE))
+			tweenhelpers.append(TweenHelper(card,COLOR_TWEEN,(255,255,100,255),0.1,SLIDE_EASE))
+			collectionpane.remove(card)
+			panehovered.add(card)
+		elif deckbuilder and (((not card.display and not card.animating and not card.rect.collidepoint(pygame.mouse.get_pos())) or (not card.animating and card.disabled)) and not panehovered.has(card)) or (panehovered.has(card) and not card.animating and not card.rect.collidepoint(pygame.mouse.get_pos())):
+			tweenhelpers.append(TweenHelper(card,SIZE_TWEEN,(150,150),0.1,SLIDE_EASE))
+			tweenhelpers.append(TweenHelper(card,POSITION_TWEEN,card.menuspot,0.1,SLIDE_EASE))
+			if not card.disabled and not card.colored:
+				tweenhelpers.append(TweenHelper(card,COLOR_TWEEN,(255,255,255,255),0.1,SLIDE_EASE))
+			elif not card.disabled and card.colored:
+				tweenhelpers.append(TweenHelper(card,COLOR_TWEEN,card.colorspot,0.1,SLIDE_EASE))
+			elif card.disabled:
+				tweenhelpers.append(TweenHelper(card,COLOR_TWEEN,(100,10,10,255),0.2,SLIDE_EASE))
+			collectionpane.add(card)
+			panehovered.remove(card)
+
+
+	if pressed[pygame.K_SPACE] and bool(panehovered) and not panehovered.sprites()[0].animating and cardSpriteType(panehovered.sprites()[0].card)=="card":
+		card = panehovered.sprites()[0]
+		panezoomed.add(card)
+		panehovered.remove(card)
+		card.display = True
+		TweenHelper().wipeTweens(card)
+		tweenhelpers.append(TweenHelper(card,COLOR_TWEEN,(255,255,255,255),0.1,SLIDE_EASE))
+		tweenhelpers.append(TweenHelper(card,POSITION_TWEEN,(600,375),0.1,SLIDE_EASE))
+		tweenhelpers.append(TweenHelper(card,SIZE_TWEEN,(350,350),0.1,SLIDE_EASE))
+	elif pressed[pygame.K_SPACE] and bool(panezoomed) and not panezoomed.sprites()[0].animating:
+		card = panezoomed.sprites()[0]
+		card.display = False
+		collectionpane.add(card)
+		panezoomed.remove(card)
+		TweenHelper().wipeTweens(card)
+		tweenhelpers.append(TweenHelper(card,POSITION_TWEEN,card.menuspot,0.1,SLIDE_EASE))
+		tweenhelpers.append(TweenHelper(card,SIZE_TWEEN,(150,150),0.1,SLIDE_EASE))
 
 	for tween in tweenhelpers:
 		step = 1/FRAMERATE
@@ -873,22 +980,50 @@ while not done:
 		background.fill((255,255,255))
 		screen.blit(background,recty)
 		screen.blit(show,recty)
-		menuhovered.draw(screen)
 		menu.draw(screen)
 		for card in menu:
 			drawCard(card,MENU_OPTION)
+		menuhovered.draw(screen)
+		if bool(menuhovered):
+			drawCard(menuhovered.sprites()[0],MENU_OPTION)
 
 	if opening_menu:
-		menuhovered.draw(screen)
 		menu.draw(screen)
 		for card in menu:
 			drawCard(card,MENU_OPTION)
+		menuhovered.draw(screen)
+		if bool(menuhovered):
+			drawCard(menuhovered.sprites()[0],MENU_OPTION)
+		
+
+	if deckbuilder:
+		collectionpane.draw(screen)
+		for card in collectionpane:
+			var = 0
+			if cardSpriteType(card.card)=="option":
+				var = MENU_OPTION
+			else:
+				var = IN_HAND
+			drawCard(card,var)
+		panehovered.draw(screen)
+		if bool(panehovered):
+			if cardSpriteType(panehovered.sprites()[0].card)=="option":
+				var = MENU_OPTION
+			else:
+				var = HAND_ZOOMED
+			drawCard(panehovered.sprites()[0],var)
+		panezoomed.draw(screen)
+		if bool(panezoomed):
+			drawCard(panezoomed.sprites()[0],ZOOMED)
 		
 	if flavorscreen:
 		txtbx.draw(screen)
 		menu.draw(screen)
 		for card in menu:
 			drawCard(card,MENU_OPTION)
+		menuhovered.draw(screen)
+		if bool(menuhovered):
+			drawCard(menuhovered.sprites()[0],MENU_OPTION)
 
 	if ingame:	
 		yourdeck.draw(screen)
