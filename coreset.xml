@@ -1365,4 +1365,85 @@
 	<text>Whenever you play an Action card, heal an ally 1 HP or deal 1 damage to an enemy at random.</text>
 	<cost>3</cost>
 </card>
+<card>
+	<name>Priest</name>
+	<cardtype>Minion
+		<subtype>Priest</subtype>
+	</cardtype>
+	<text>Intercepts damage. When you play this, draw a random Action card from your deck.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Arc Bolt</name>
+	<cardtype>Action
+		<subtype>Electric Magical</subtype>
+	</cardtype>
+	<text>Deal 1 damage to a Minion and the Minions adjacent to it.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Thundercharge</name>
+	<cardtype>Action
+		<subtype>Electric</subtype>
+	</cardtype>
+	<text>Deal 1 damage to a Minion. That Minion can attack three times this turn.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Boon</name>
+	<cardtype>Trait
+		<subtype>Vitality</subtype>
+	</cardtype>
+	<text>At the end of each turn, heal a random ally 1 HP.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Blessing</name>
+	<cardtype>Trait
+		<subtype>Holy</subtype>
+	</cardtype>
+	<text>Whenever an ally is healed, deal 1 damage to a random enemy.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Witch Hunter</name>
+	<cardtype>Minion
+		<subtype>Inquisitor</subtype>
+	</cardtype>
+	<text>When you play this, an enemy Minion intercepts damage this turn.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Cleanser</name>
+	<cardtype>Minion
+		<subtype>Inquisitor</subtype>
+	</cardtype>
+	<text>When you play this, each opponent skips the next card they would draw.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Purge Heresy</name>
+	<cardtype>Action
+		<subtype>Inquisitor</subtype>
+	</cardtype>
+	<text>Destroy a Minion with "Intercepts damage".</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Hunt Down</name>
+	<cardtype>Action
+		<subtype>Sensory</subtype>
+	</cardtype>
+	<text>Choose a player. The next Minion card that player would draw is discarded.</text>
+	<cost>3</cost>
+</card>
 </root>

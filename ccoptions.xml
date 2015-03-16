@@ -435,13 +435,23 @@
 				<card amt="2">Stormcaller</card>
 			</class>
 			<class name="Priest">
-
+				<card amt="4">Priest</card>
+				<card amt="2">Divine Energy</card>
+				<card amt="2">Arc Bolt</card>
+				<card amt="2">Thundercharge</card>
 			</class>
 			<class name="Healer">
-
+				<card amt="4">Healer</card>
+				<card amt="2">Replenish</card>
+				<card amt="2">Boon</card>
+				<card amt="2">Blessing</card>
 			</class>
 			<class name="Inquisitor">
-
+				<card amt="2">Witch Hunter</card>
+				<card amt="2">Cleanser</card>
+				<card amt="2">Radiance</card>
+				<card amt="2">Purge Heresy</card>
+				<card amt="2">Hunt Down</card>
 			</class>
 		</category>
 		<category name="Unholy">
