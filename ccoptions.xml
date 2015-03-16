@@ -1,0 +1,530 @@
+<root>
+	<races>
+		<category name="Common Folk">
+			<race name="Human">
+				<card amt="2">Attack</card>
+				<card amt="4">Serf</card>
+				<card amt="2">Human Ingenuity</card>
+				<card amt="2">Piety</card>
+			</race>
+			<race name="Half-Elf">
+				<card amt="2">Attack</card>
+				<card amt="2">Serf</card>
+				<card amt="2">Nimbleness</card>
+				<card amt="2">Piety</card>
+				<card amt="2">Empathy</card>
+			</race>
+			<race name="Half-Orc">
+				<card amt="3">Attack</card>
+				<card amt="1">Serf</card>
+				<card amt="1">Brute</card>
+				<card amt="2">Bloodlust</card>
+				<card amt="2">Piety</card>
+				<card amt="1">Human Ingenuity</card>
+			</race>
+			<race name="Half-Dwarf">
+				<card amt="3">Attack</card>
+				<card amt="2">Serf</card>
+				<card amt="2">Miner</card>
+				<card amt="1">Piety</card>
+				<card amt="1">Stolidity</card>
+				<card amt="1">Greed</card>
+			</race>
+			<race name="Half-Gnome">
+				<card amt="2">Attack</card>
+				<card amt="2">Tinker</card>
+				<card amt="2">Human Ingenuity</card>
+				<card amt="2">Agility</card>
+				<card amt="1">Piety</card>
+				<card amt="1">Magical Aptitude</card>
+			</race>
+			<race name="Wildman">
+				<card amt="4">Attack</card>
+				<card amt="2">Hyperborean Skin</card>
+				<card amt="2">Domesticated Yeti</card>
+				<card amt="2">Intimidate</card>
+			</race>
+		</category>
+		<category name="Dwarves">
+			<race name="Duergar">
+				<card amt="3">Attack</card>
+				<card amt="3">Kobold</card>
+				<card amt="2">Greed</card>
+				<card amt="1">Tremorsense</card>
+				<card amt="1">Darksight</card>
+			</race>
+			<race name="Mountain Dwarf">
+				<card amt="3">Attack</card>
+				<card amt="3">Miner</card>
+				<card amt="2">Stolidity</card>
+				<card amt="2">Greed</card>
+			</race>
+			<race name="Hill Dwarf">
+				<card amt="3">Attack</card>
+				<card amt="3">Swig</card>
+				<card amt="2">Stolidity</card>
+				<card amt="2">Jovial</card>
+			</race>
+		</category>
+		<category name="Undead">
+			<race name="Vampire">
+				<card amt="3">Attack</card>
+				<card amt="3">Vampire Spawn</card>
+				<card amt="2">Replenish</card>
+				<card amt="2">Vampirism</card>
+			</race>
+			<race name="Zombie">
+				<card amt="3">Attack</card>
+				<card amt="2">Undaunted</card>
+				<card amt="2">Minor Zombie</card>
+				<card amt="3">Necrotic Flesh</card>
+			</race>
+			<race name="Spirit">
+				<card amt="1">Attack</card>
+				<card amt="3">Ethereal</card>
+				<card amt="2">Intimidate</card>
+				<card amt="1">Possess</card>
+				<card amt="3">Apparition</card>
+			</race>
+		</category>
+		<category name="Elves">
+			<race name="High Elf">
+				<card amt="1">Attack</card>
+				<card amt="3">Sophistication</card>
+				<card amt="2">Erudition</card>
+				<card amt="2">Magical Aptitude</card>
+				<card amt="2">Aloof</card>
+			</race>
+			<race name="Blood Elf">
+				<card amt="4">Attack</card>
+				<card amt="2">Blood Frenzy</card>
+				<card amt="2">Bloodsense</card>
+				<card amt="1">Intimidate</card>
+				<card amt="1">Combat Strength</card>
+			</race>
+			<race name="Drow">
+				<card amt="2">Attack</card>
+				<card amt="2">Nimbleness</card>
+				<card amt="2">Camouflage</card>
+				<card amt="2">Antipathy</card>
+				<card amt="2">Giant Spider</card>
+			</race>
+			<race name="Wood Elf">
+				<card amt="2">Attack</card>
+				<card amt="2">Nimbleness</card>
+				<card amt="2">Camouflage</card>
+				<card amt="2">Empathy</card>
+				<card amt="2">Grizzly Bear</card>
+			</race>
+			<race name="Svirfneblin">
+				<card amt="2">Attack</card>
+				<card amt="2">Kobold</card>
+				<card amt="2">Magical Aptitude</card>
+				<card amt="2">Camouflage</card>
+				<card amt="1">Tremorsense</card>
+				<card amt="1">Darksight</card>
+			</race>
+			<race name="Night Elf">
+				<card amt="3">Attack</card>
+				<card amt="2">Darksight</card>
+				<card amt="2">Camouflage</card>
+				<card amt="3">Sneak Attack</card>
+			</race>
+			<race name="Blue Elf">
+				<card amt="2">Attack</card>
+				<card amt="2">Nimbleness</card>
+				<card amt="2">Amphibious</card>
+				<card amt="2">Empathy</card>
+				<card amt="2">Sahuagin</card>
+			</race>
+		</category>
+		<category name="Goblinoids">
+			<race name="Orc">
+				<card amt="4">Attack</card>
+				<card amt="2">Intimidate</card>
+				<card amt="2">Bloodlust</card>
+				<card amt="2">Brute</card>
+			</race>
+			<race name="Goblin">
+				<card amt="2">Attack</card>
+				<card amt="2">Footpad</card>
+				<card amt="3">Snatch</card>
+				<card amt="3">Agility</card>
+			</race>
+			<race name="Hobgoblin">
+				<card amt="3">Attack</card>
+				<card amt="1">Footpad</card>
+				<card amt="3">Combat Strength</card>
+				<card amt="2">Agility</card>
+				<card amt="1">Brute</card>
+			</race>
+			<race name="Gremlin">
+				<card amt="2">Attack</card>
+				<card amt="2">Footpad</card>
+				<card amt="3">Tinker</card>
+				<card amt="3">Agility</card>
+			</race>
+			<race name="Bugbear">
+				<card amt="4">Attack</card>
+				<card amt="2">Bloodlust</card>
+				<card amt="4">Rampage</card>
+			</race>
+		</category>
+		<category name="Small Folk">
+			<race name="Gnome">
+				<card amt="3">Attack</card>
+				<card amt="2">Tinker</card>
+				<card amt="2">Magical Aptitude</card>
+				<card amt="2">Agility</card>
+				<card amt="2">Erudition</card>
+			</race>
+			<race name="Halfling">
+				<card amt="3">Attack</card>
+				<card amt="2">Footpad</card>
+				<card amt="2">Snatch</card>
+				<card amt="3">Charisma</card>
+			</race>
+		</category>
+		<category name="Ancient Folk">
+			<race name="Changeling">
+				<card amt="3">Attack</card>
+				<card amt="3">Magical Aptitude</card>
+				<card amt="2">Enigma</card>
+				<card amt="2">Ancient</card>
+			</race>
+		</category>
+		<category name="Brittle Folk">
+			<race name="Automaton">
+				<card amt="2">Attack</card>
+				<card amt="2">Steam-Powered</card>
+				<card amt="2">Overcharge</card>
+				<card amt="4">Artificial</card>
+			</race>
+			<race name="Gargoyle">
+				<card amt="3">Attack</card>
+				<card amt="3">Camouflage</card>
+				<card amt="2">Intimidate</card>
+				<card amt="2">Stoneskin</card>
+			</race>
+		</category>
+		<category name="Scaled Folk">
+			<race name="Naga">
+				<card amt="3">Attack</card>
+				<card amt="2">Cold-Blooded</card>
+				<card amt="3">Venom</card>
+				<card amt="2">Slither</card>
+			</race>
+			<race name="Lizardfolk">
+				<card amt="2">Attack</card>
+				<card amt="2">Cold-Blooded</card>
+				<card amt="3">Erudition</card>
+				<card amt="3">Sophistication</card>
+			</race>
+		</category>
+		<category name="Beast Folk">
+			<race name="Catfolk">
+				<card amt="2">Attack</card>
+				<card amt="2">Footpad</card>
+				<card amt="2">Darksight</card>
+				<card amt="2">Slash</card>
+				<card amt="2">Snatch</card>
+			</race>
+			<race name="Nezumi">
+				<card amt="2">Attack</card>
+				<card amt="4">Snatch</card>
+				<card amt="2">Vector</card>
+				<card amt="2">Wretched</card>
+			</race>
+			<race name="Tengu">
+				<card amt="3">Attack</card>
+				<card amt="3">Flight</card>
+				<card amt="2">Peck</card>
+				<card amt="2">Gouge</card>
+			</race>
+			<race name="Gnoll">
+				<card amt="4">Attack</card>
+				<card amt="1">Brutality</card>
+				<card amt="1">Bloodlust</card>
+				<card amt="2">Howl</card>
+				<card amt="2">Gnoll Raider</card>
+			</race>
+			<race name="Kitsune">
+				<card amt="2">Attack</card>
+				<card amt="2">Aloof</card>
+				<card amt="2">Sophistication</card>
+				<card amt="4">Leyline Connection</card>
+			</race>
+			<race name="Centaur">
+				<card amt="3">Attack</card>
+				<card amt="3">Trample</card>
+				<card amt="2">Centaur Archer</card>
+				<card amt="2">Track</card>
+			</race>
+			<race name="Lamassu">
+				<card amt="2">Attack</card>
+				<card amt="2">Leyline Connection</card>
+				<card amt="2">Flight</card>
+				<card amt="2">Sophistication</card>
+				<card amt="2">Magical Aptitude</card>
+			</race>
+		</category>
+	</races>
+	<classes>
+		<category name="Warriors">
+			<class name="Knight">
+				<card amt="2">Squire</card>
+				<card amt="2">Honor</card>
+				<card amt="2">Valorous Strike</card>
+				<card amt="2">Combat Strength</card>
+				<card amt="2">Knight</card>
+			</class>
+			<class name="Berserker">
+				<card amt="2">Barbarian</card>
+				<card amt="2">Brute</card>
+				<card amt="4">Rage</card>
+				<card amt="2">Reckless</card>
+			</class>
+			<class name="Warlord">
+				<card amt="2">Soldier</card>
+				<card amt="2">Serf</card>
+				<card amt="2">Command</card>
+				<card amt="2">Instruct</card>
+				<card amt="2">Inspire</card>
+			</class>
+			<class name="Executioner">
+				<card amt="2">Squire</card>
+				<card amt="2">Torturer</card>
+				<card amt="4">Execute</card>
+				<card amt="2">Death Knell</card>
+			</class>
+			<class name="Cavalier">
+				<card amt="2">Squire</card>
+				<card amt="4">Steed</card>
+				<card amt="2">Chivalry</card>
+				<card amt="2">Trample</card>
+			</class>
+			<class name="Samurai">
+				<card amt="2">Daimyo</card>
+				<card amt="2">Shogun</card>
+				<card amt="2">Bushido</card>
+				<card amt="2">Slice</card>
+				<card amt="2">Combat Strength</card>
+			</class>
+			<class name="Gladiator">
+				<card amt="4">Pit Fighter</card>
+				<card amt="2">Knockout</card>
+				<card amt="2">Trip</card>
+				<card amt="2">Dirty Fighting</card>
+			</class>
+			<class name="Dragoon">
+				<card amt="2">Dragonling</card>
+				<card amt="2">Skink</card>
+				<card amt="4">Scale Block</card>
+				<card amt="2">Dragonbreath</card>
+			</class>
+			<class name="Slayer">
+				<card amt="4">Slayer</card>
+				<card amt="2">Execute</card>
+				<card amt="2">Hatred</card>
+				<card amt="2">Vendetta</card>
+			</class>
+			<class name="Tank">
+				<card amt="4">Bodyguard</card>
+				<card amt="2">Armor Mastery</card>
+				<card amt="2">Shield Block</card>
+				<card amt="2">Stoic Stance</card>
+			</class>
+			<class name="Warden">
+				<card amt="4">Bodyguard</card>
+				<card amt="2">Trip</card>
+				<card amt="2">Pin</card>
+				<card amt="2">Enclose</card>
+			</class>
+			<class name="Spellbreaker">
+				<card amt="4">Warrior</card>
+				<card amt="3">Spellbreak</card>
+				<card amt="3">Antimagic Field</card>
+			</class>
+			<class name="Scout">
+				<card amt="2">Scout</card>
+				<card amt="2">Messenger</card>
+				<card amt="2">Sprint</card>
+				<card amt="4">Recon</card>
+			</class>
+		</category>
+		<category name="Martial Artists">
+			<class name="Monk">
+				<card amt="2">Acolyte</card>
+				<card amt="2">Monk</card>
+				<card amt="2">Asceticism</card>
+				<card amt="2">Pressure Point</card>
+				<card amt="2">Flurry of Blows</card>
+			</class>
+			<class name="Ninja">
+				<card amt="4">Ninja</card>
+				<card amt="2">Slice</card>
+				<card amt="2">Footpad</card>
+				<card amt="2">Assassinate</card>
+			</class>
+			<class name="Sensei">
+				<card amt="2">Martial Artist</card>
+				<card amt="2">Student</card>
+				<card amt="4">Tutor</card>
+				<card amt="2">Unarmed Strike</card>
+			</class>
+			<class name="Tetori">
+				<card amt="4">Martial Artist</card>
+				<card amt="2">Unarmed Strike</card>
+				<card amt="2">Pin</card>
+				<card amt="2">Throw</card>
+			</class>
+			<class name="Traceur">
+				<card amt="4">Traceur</card>
+				<card amt="2">Unarmed Strike</card>
+				<card amt="2">Maneuver</card>
+				<card amt="2">Resourceful</card>
+			</class>
+		</category>
+		<category name="Naturalists">
+			<class name="Druid">
+				<card amt="2">Stag</card>
+				<card amt="2">Owl</card>
+				<card amt="2">Wolf</card>
+				<card amt="2">Purify</card>
+				<card amt="2">Moonlight</card>
+			</class>
+			<class name="Shaman">
+				<card amt="2">Grizzly Bear</card>
+				<card amt="2">Viper</card>
+				<card amt="2">Hawk</card>
+				<card amt="2">Sunfire</card>
+				<card amt="2">Seismic Strike</card>
+			</class>
+			<class name="Ranger">
+				<card amt="4">Centaur Archer</card>
+				<card amt="2">Point-Blank Shot</card>
+				<card amt="2">Snipe</card>
+				<card amt="2">Dual Wielding</card>
+			</class>
+			<class name="Voodoo">
+				<card amt="4">Voodoo</card>
+				<card amt="2">Balance</card>
+				<card amt="2">Bloodletting</card>
+				<card amt="2">Transfusion</card>
+			</class>
+			<class name="Beastmaster">
+				<card amt="2">Grizzly Bear</card>
+				<card amt="2">Wolf</card>
+				<card amt="2">Stag</card>
+				<card amt="2">Panther</card>
+				<card amt="2">Ape</card>
+			</class>
+		</category>
+		<category name="Holy">
+			<class name="Paladin">
+				<card amt="4">Paladin</card>
+				<card amt="2">Smite</card>
+				<card amt="2">Radiance</card>
+				<card amt="2">Divine Champion</card>
+			</class>
+			<class name="Cleric">
+				<card amt="2">Paladin</card>
+				<card amt="2">Healer</card>
+				<card amt="2">Radiance</card>
+				<card amt="2">Divine Energy</card>
+				<card amt="2">Stormcaller</card>
+			</class>
+			<class name="Priest">
+
+			</class>
+			<class name="Healer">
+
+			</class>
+			<class name="Inquisitor">
+
+			</class>
+		</category>
+		<category name="Unholy">
+			<class name="Blackguard">
+
+			</class>
+			<class name="Witch">
+
+			</class>
+			<class name="Cultist">
+
+			</class>
+			<class name="Sepulchre Knight">
+
+			</class>
+		</category>
+		<category name="Spellcasters">
+			<class name="Wizard">
+
+			</class>
+			<class name="Sorcerer">
+
+			</class>
+			<class name="Soothsayer">
+
+			</class>
+			<class name="Mage">
+
+			</class>
+			<class name="Conjurer">
+
+			</class>
+			<class name="Hexblade">
+
+			</class>
+			<class name="Archaeologist">
+
+			</class>
+			<class name="Psion">
+
+			</class>
+			<class name="Wilder">
+
+			</class>
+		</category>
+		<category name="Assassins">
+			<class name="Assassin">
+
+			</class>
+			<class name="Hunter">
+
+			</class>
+			<class name="Spy">
+
+			</class>
+		</category>
+		<category name="Outlaws">
+			<class name="Rogue">
+
+			</class>
+			<class name="Bandit">
+
+			</class>
+			<class name="Corsair">
+
+			</class>
+		</category>
+		<category name="Gunslingers">
+			<class name="Gun Tank">
+
+			</class>
+			<class name="Cowboy">
+
+			</class>
+			<class name="Trophy Hunter">
+
+			</class>
+			<class name="Spellslinger">
+
+			</class>
+			<class name="Gunner">
+
+			</class>
+		</category>
+	</classes>
+</root>

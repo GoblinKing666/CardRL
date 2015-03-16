@@ -1,0 +1,1368 @@
+<root>
+<card>
+	<name>Attack</name>
+	<cost>0</cost>
+	<cardtype>Action
+		<subtype>Attack</subtype>
+	</cardtype>
+	<text>Deal 1 damage.</text>
+</card>
+<card>
+	<name>Serf</name>
+	<cost>1</cost>
+	<cardtype>Minion
+		<subtype>Human Peasant</subtype>
+	</cardtype>
+	<text>Intercepts damage.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+</card>
+<card>
+	<name>Human Ingenuity</name>
+	<cost>2</cost>
+	<cardtype>Trait
+		<subtype>Human</subtype>
+	</cardtype>
+	<text>Your Traits cost (1) less.</text>
+</card>
+<card>
+	<name>Piety</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Holy</subtype>
+	</cardtype>
+	<text>You have +2 Favor.</text>
+</card>
+<card>
+	<name>Miner</name>
+	<cost>2</cost>
+	<cardtype>Minion
+		<subtype>Dwarven Peasant</subtype>
+	</cardtype>
+	<text>Intercepts damage.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+</card>
+<card>
+	<name>Stolidity</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Physical</subtype>
+	</cardtype>
+	<text>You have +1 Endurance and +1 Constitution.</text>
+</card>
+<card>
+	<name>Greed</name>
+	<cost>5</cost>
+	<cardtype>Trait
+		<subtype>Greed</subtype>
+	</cardtype>
+	<text>Your cards cost (1) less.</text>
+</card>
+<card>
+	<name>Nimbleness</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Ability</subtype>
+	</cardtype>
+	<text>You have +1 Dexterity and +1 Speed.</text>
+</card>
+<card>
+	<name>Camouflage</name>
+	<cost>2</cost>
+	<cardtype>Action
+		<subtype>Stealth</subtype>
+	</cardtype>
+	<text>You become invisible for 1 turn.</text>
+</card>
+<card>
+	<name>Empathy</name>
+	<cost>1</cost>
+	<cardtype>Action
+		<subtype>Psionic</subtype>
+	</cardtype>
+	<text>The next Minion you play gets +1 HP.</text>
+</card>
+<card>
+	<name>Grizzly Bear</name>
+	<cost>3</cost>
+	<cardtype>Minion
+		<subtype>Bear</subtype>
+	</cardtype>
+	<text>Deal 1 damage to a random enemy each turn.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+</card>
+<card>
+	<name>Hyperborean Skin</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Cold</subtype>
+	</cardtype>
+	<text>You take 1 less damage from Cold sources.</text>
+</card>
+<card>
+	<name>Domesticated Yeti</name>
+	<cost>3</cost>
+	<cardtype>Minion
+		<subtype>Cold</subtype>
+	</cardtype>
+	<text>Can attack once per turn.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+</card>
+<card>
+	<name>Intimidate</name>
+	<cost>2</cost>
+	<cardtype>Action
+		<subtype>Fear</subtype>
+	</cardtype>
+	<text>Target player skips the next card they would draw.</text>
+</card>
+<card>
+	<name>Kobold</name>
+	<cost>2</cost>
+	<cardtype>Minion
+		<subtype>Deep Reptilian</subtype>
+	</cardtype>
+	<text>Once per turn, you may pay (1) for this to attack.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+</card>
+<card>
+	<name>Darksight</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Sensory</subtype>
+	</cardtype>
+	<text>You have +1 Perception and +1 Intellect.</text>
+</card>
+<card>
+	<name>Tremorsense</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Sensory</subtype>
+	</cardtype>
+	<text>You have +1 Perception and +1 Judgement.</text>
+</card>
+<card>
+	<name>Swig</name>
+	<cost>2</cost>
+	<cardtype>Action
+		<subtype>Alcohol</subtype>
+	</cardtype>
+	<text>You get +1 Charm and become inebriated for 2 turns.</text>
+</card>
+<card>
+	<name>Jovial</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Social</subtype>
+	</cardtype>
+	<text>You have +4 Charm while inebriated.</text>
+</card>
+<card>
+	<name>Vampire Spawn</name>
+	<cost>4</cost>
+	<cardtype>Minion
+		<subtype>Vampiric Underling</subtype>
+	</cardtype>
+	<text>Intercepts damage. Heals 1 HP each turn.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+</card>
+<card>
+	<name>Replenish</name>
+	<cost>1</cost>
+	<cardtype>Action
+		<subtype>Vitality</subtype>
+	</cardtype>
+	<text>Heal a target 3 HP.</text>
+</card>
+<card>
+	<name>Vampirism</name>
+	<cost>4</cost>
+	<cardtype>Trait
+		<subtype>Vampiric</subtype>
+	</cardtype>
+	<text>Whenever an opponent is damaged, gain that much HP. You take double damage from Light and Holy sources.</text>
+</card>
+<card>
+	<name>Undaunted</name>
+	<cost>2</cost>
+	<cardtype>Trait
+		<subtype>Mental</subtype>
+	</cardtype>
+	<text>You are immune to Fear effects.</text>
+</card>
+<card>
+	<name>Minor Zombie</name>
+	<cost>3</cost>
+	<cardtype>Minion
+		<subtype>Undead</subtype>
+	</cardtype>
+	<text>Intercepts damage. Once per turn, you may pay (2) to move this from your discard pile to your hand.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+</card>
+<card>
+	<name>Necrotic Flesh</name>
+	<cost>2</cost>
+	<cardtype>Trait
+		<subtype>Undead</subtype>
+	</cardtype>
+	<text>You are immune to damage from Necrotic sources.</text>
+</card>
+<card>
+	<name>Ethereal</name>
+	<cost>6</cost>
+	<cardtype>Trait
+		<subtype>Spirit</subtype>
+	</cardtype>
+	<text>You take 1 less damage from all sources.</text>
+</card>
+<card>
+	<name>Possess</name>
+	<cost>4</cost>
+	<cardtype>Action
+		<subtype>Psionic</subtype>
+	</cardtype>
+	<text>Take control of an enemy Minion for this turn only.</text>
+</card>
+<card>
+	<name>Apparition</name>
+	<cost>4</cost>
+	<cardtype>Minion
+		<subtype>Spirit</subtype>
+	</cardtype>
+	<text>Intercepts damage. Takes 1 less damage from all sources.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+</card>
+<card>
+	<name>Sophistication</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Knowledge</subtype>
+	</cardtype>
+	<text>You have +1 Charm and +1 Judgement.</text>
+</card>
+<card>
+	<name>Erudition</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Knowledge</subtype>
+	</cardtype>
+	<text>You have +1 Intellect and +1 Perception</text>
+</card>
+<card>
+	<name>Magical Aptitude</name>
+	<cost>2</cost>
+	<cardtype>Trait
+		<subtype>Magical</subtype>
+	</cardtype>
+	<text>Your Magical cards cost (1) less to play.</text>
+</card>
+<card>
+	<name>Aloof</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Social</subtype>
+	</cardtype>
+	<text>Your opponents have -1 Charm.</text>
+</card>
+<card>
+	<name>Blood Frenzy</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Attack</subtype>
+	</cardtype>
+	<text>Deal 1 damage to a random target each turn.</text>
+</card>
+<card>
+	<name>Bloodsense</name>
+	<cost>2</cost>
+	<cardtype>Trait
+		<subtype>Sensory</subtype>
+	</cardtype>
+	<text>Whenever damage is dealt, you get +1 Perception.</text>
+</card>
+<card>
+	<name>Combat Strength</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Martial</subtype>
+	</cardtype>
+	<text>You have +1 Strength and +1 Dexterity.</text>
+</card>
+<card>
+	<name>Antipathy</name>
+	<cost>1</cost>
+	<cardtype>Action
+		<subtype>Psionic</subtype>
+	</cardtype>
+	<text>The next Minion an opponent plays gets -1 HP.</text>
+</card>
+<card>
+	<name>Giant Spider</name>
+	<cost>3</cost>
+	<cardtype>Minion
+		<subtype>Spider</subtype>
+	</cardtype>
+	<text>Once per turn, you may spend 1 Favor for this to attack.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+</card>
+<card>
+	<name>Sneak Attack</name>
+	<cost>2</cost>
+	<cardtype>Action
+		<subtype>Stealth Attack</subtype>
+	</cardtype>
+	<text>Deal 1 damage. Can't be intercepted.</text>
+</card>
+<card>
+	<name>Amphibious</name>
+	<cost>2</cost>
+	<cardtype>Trait
+		<subtype>Amphibious</subtype>
+	</cardtype>
+	<text>You can survive underwater.</text>
+</card>
+<card>
+	<name>Sahuagin</name>
+	<cost>3</cost>
+	<cardtype>Minion
+		<subtype>Aquatic Reptilian</subtype>
+	</cardtype>
+	<text>Deal 1 damage to a random enemy each turn.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+</card>
+<card>
+	<name>Bloodlust</name>
+	<cost>3</cost>
+	<cardtype>Trait
+		<subtype>Martial</subtype>
+	</cardtype>
+	<text>Your Actions deal 1 additional damage.</text>
+</card>
+<card>
+	<name>Brute</name>
+	<cost>2</cost>
+	<cardtype>Minion
+		<subtype>Orcish Underling</subtype>
+	</cardtype>
+	<text>Can attack once per turn, but only if you have more Strength than each opponent.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+</card>
+<card>
+	<name>Footpad</name>
+	<cost>0</cost>
+	<cardtype>Action
+		<subtype>Stealth</subtype>
+	</cardtype>
+	<text>The next time one of your Minions attacks, it can't be intercepted.</text>
+</card>
+<card>
+	<name>Snatch</name>
+	<cost>0</cost>
+	<cardtype>Action
+		<subtype>Theft</subtype>
+	</cardtype>
+	<text>Draw a card from an opponent's deck.</text>
+</card>
+<card>
+	<name>Agility</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Ability</subtype>
+	</cardtype>
+	<text>You have +1 Dexterity and +1 Favor.</text>
+</card>
+<card>
+	<name>Tinker</name>
+	<cost>0</cost>
+	<cardtype>Action
+		<subtype>Tinker</subtype>
+	</cardtype>
+	<text>Destroy one of your Equipment to draw two cards.</text>
+</card>
+<card>
+	<name>Rampage</name>
+	<cost>2</cost>
+	<cardtype>Action
+		<subtype>Attack</subtype>
+	</cardtype>
+	<text>Deal 2 damage.</text>
+</card>
+<card>
+	<name>Charisma</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Social</subtype>
+	</cardtype>
+	<text>You have +1 Charm and +1 Favor.</text>
+</card>
+<card>
+	<name>Enigma</name>
+	<cost>4</cost>
+	<cardtype>Trait
+		<subtype>Mystery</subtype>
+	</cardtype>
+	<text>You are immune to Psionic effects.</text>
+</card>
+<card>
+	<name>Ancient</name>
+	<cost>1</cost>
+	<cardtype>Trait
+		<subtype>Ancient</subtype>
+	</cardtype>
+	<text>You have +1 Intellect and +1 Endurance.</text>
+</card>
+<card>
+	<name>Steam-Powered</name>
+	<cost>2</cost>
+	<cardtype>Trait
+		<subtype>Mechanical</subtype>
+	</cardtype>
+	<text>Once per turn, you may attack.</text>
+</card>
+<card>
+	<name>Overcharge</name>
+	<cost>3</cost>
+	<cardtype>Action
+		<subtype>Mechanical</subtype>
+	</cardtype>
+	<text>The next time an ally attacks, it deals 2 additional damage.</text>
+</card>
+<card>
+	<name>Artificial</name>
+	<cost>7</cost>
+	<cardtype>Trait
+		<subtype>Mechanical</subtype>
+	</cardtype>
+	<text>You are immune to Psionic and Fear effects.</text>
+</card>
+<card>
+	<name>Stoneskin</name>
+	<cost>6</cost>
+	<cardtype>Trait
+		<subtype>Earthen</subtype>
+	</cardtype>
+	<text>You take 1 less damage from all sources.</text>
+</card>
+<card>
+	<name>Cold-Blooded</name>
+	<cost>4</cost>
+	<cardtype>Trait
+		<subtype>Reptilian</subtype>
+	</cardtype>
+	<text>Whenever a Fire source deals damage to you, draw a card. Whenever a Cold source deals damage to you, skip the next card you would draw.</text>
+</card>
+<card>
+	<name>Venom</name>
+	<cost>3</cost>
+	<cardtype>Action
+		<subtype>Venom</subtype>
+	</cardtype>
+	<text>Poison a Minion.</text>
+</card>
+<card>
+	<name>Slither</name>
+	<cardtype>Action
+		<subtype>Move</subtype>
+	</cardtype>
+	<text>You get +4 Speed this turn only.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Slash</name>
+	<cardtype>Action
+		<subtype>Edged Attack</subtype>
+	</cardtype>
+	<text>Deal 1 damage. 50% chance to inflict bleeding.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Vector</name>
+	<cardtype>Trait
+		<subtype>Disease</subtype>
+	</cardtype>
+	<text>Whenever you deal damage, infect the target.</text>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Wretched</name>
+	<cardtype>Trait
+		<subtype>Underling</subtype>
+	</cardtype>
+	<text>Whenever you play an Underling, deal 1 damage.</text>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Flight</name>
+	<cardtype>Trait
+		<subtype>Flight</subtype>
+	</cardtype>
+	<text>You are immune to Earthen effects.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Peck</name>
+	<cardtype>Action
+		<subtype>Puncture Attack</subtype>
+	</cardtype>
+	<text>Deal 1 damage. Draw a card from an opponent's deck.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Gouge</name>
+	<cardtype>Action
+		<subtype>Edged Attack</subtype>
+	</cardtype>
+	<text>Deal 1 damage and inflict bleeding.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Brutality</name>
+	<cardtype>Action
+		<subtype>Attack</subtype>
+	</cardtype>
+	<text>Deal 3 damage to a random enemy.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Howl</name>
+	<cardtype>Action
+		<subtype>Sonic</subtype>
+	</cardtype>
+	<text>Each of your Minions attacks a random enemy.</text>
+	<cost>5</cost>
+</card>
+<card>
+	<name>Gnoll Raider</name>
+	<cardtype>Minion
+		<subtype>Gnoll Underling</subtype>
+	</cardtype>
+	<text>Can attack twice each turn.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Leyline Connection</name>
+	<cost>0</cost>
+	<cardtype>Action
+		<subtype>Magical</subtype>
+	</cardtype>
+	<text>Draw a card.</text>
+</card>
+<card>
+	<name>Trample</name>
+	<cardtype>Action
+		<subtype>Blunt Attack</subtype>
+	</cardtype>
+	<text>Deal 1 damage. If your Speed is higher than each opponent's Speed, deal 3 damage instead.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Centaur Archer</name>
+	<cardtype>Minion
+		<subtype>Centaur Archer</subtype>
+	</cardtype>
+	<text>Can attack once each turn. Can't be intercepted.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Track</name>
+	<cardtype>Action
+		<subtype>Sensory</subtype>
+	</cardtype>
+	<text>You get +4 Perception this turn only.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Squire</name>
+	<cardtype>Minion
+		<subtype>Human Underling</subtype>
+	</cardtype>
+	<text>Once per turn, you may pay (1) to heal an ally 1 HP.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Honor</name>
+	<cardtype>Trait
+		<subtype>Honor</subtype>
+	</cardtype>
+	<text>Whenever an ally attacks, it heals 1 HP.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Valorous Strike</name>
+	<cardtype>Action
+		<subtype>Honor Attack</subtype>
+	</cardtype>
+	<text>Deal 1 damage and heal 1 HP.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Knight</name>
+	<cardtype>Minion
+		<subtype>Knight</subtype>
+	</cardtype>
+	<text>Can attack once per turn. Heals 1 HP whenever it attacks.</text>
+	<stats>
+		<hp>3</hp>
+	</stats>
+	<cost>5</cost>
+</card>
+<card>
+	<name>Barbarian</name>
+	<cardtype>Minion
+		<subtype>Berserker</subtype>
+	</cardtype>
+	<text>Can attack three times per turn. Suffers 1 damage whenever it attacks.</text>
+	<stats>
+		<hp>3</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Rage</name>
+	<cardtype>Action
+		<subtype>Berserker Attack</subtype>
+	</cardtype>
+	<text>Deal 3 damage and suffer 2 damage.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Reckless</name>
+	<cardtype>Trait
+		<subtype>Berserker</subtype>
+	</cardtype>
+	<text>Your minions deal 2 additional damage when attacking, but they attack a random target.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Soldier</name>
+	<cardtype>Minion
+		<subtype>Soldier</subtype>
+	</cardtype>
+	<text>Can attack once per turn. Intercepts damage.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Command</name>
+	<cardtype>Action
+		<subtype>Command</subtype>
+	</cardtype>
+	<text>Choose an ally. The next time it attacks, it deals 1 additional damage.</text>
+	<cost>0</cost>
+</card>
+<card>
+	<name>Instruct</name>
+	<cardtype>Action
+		<subtype>Command</subtype>
+	</cardtype>
+	<text>Whenever an ally attacks this turn, draw a card.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Inspire</name>
+	<cardtype>Action
+		<subtype>Command</subtype>
+	</cardtype>
+	<text>Draw a card for each of your Minions.</text>
+	<cost>5</cost>
+</card>
+<card>
+	<name>Torturer</name>
+	<cardtype>Minion
+		<subtype>Torturer</subtype>
+	</cardtype>
+	<text>Can attack once per turn. Can only attack Minions.</text>
+	<cost>1</cost>
+	<stats>
+		<hp>1</hp>
+	</stats>
+</card>
+<card>
+	<name>Execute</name>
+	<cardtype>Action
+		<subtype>Attack</subtype>
+	</cardtype>
+	<text>Destroy a damaged Minion.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Death Knell</name>
+	<cardtype>Trait
+		<subtype>Death</subtype>
+	</cardtype>
+	<text>As long as you are damaged, you can attack once per turn.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Steed</name>
+	<cardtype>Minion
+		<subtype>Horse</subtype>
+	</cardtype>
+	<text>You have +2 Speed.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Chivalry</name>
+	<cardtype>Trait
+		<subtype>Honor</subtype>
+	</cardtype>
+	<text>Whenever an ally attacks, you get +1 Speed.</text>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Daimyo</name>
+	<cardtype>Minion
+		<subtype>Samurai</subtype>
+	</cardtype>
+	<text>Your Honor cards cost (1) less.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Shogun</name>
+	<cardtype>Minion
+		<subtype>Samurai</subtype>
+	</cardtype>
+	<text>Your other Minions intercept damage.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Bushido</name>
+	<cardtype>Trait
+		<subtype>Honor</subtype>
+	</cardtype>
+	<text>Whenever an ally attacks, you get +1 Favor.</text>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Slice</name>
+	<cardtype>Action
+		<subtype>Edged Attack</subtype>
+	</cardtype>
+	<text>Deal 1 damage to a Minion. If you have 15? or more Speed, destroy that Minion.</text>
+	<cost>1</cost>
+</card>
+<card> 
+	<name>Pit Fighter</name>
+	<cardtype>Minion
+		<subtype>Gladiator</subtype>
+	</cardtype>
+	<text>Once per turn, you may pay 1 Endurance for this to attack.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Knockout</name>
+	<cardtype>Action
+		<subtype>Blunt Attack</subtype>
+	</cardtype>
+	<text>Your opponent gets -2 Endurance and loses (1) Energy.</text>
+	<cost>5</cost>
+</card>
+<card>
+	<name>Trip</name>
+	<cardtype>Action
+		<subtype>Attack</subtype>
+	</cardtype>
+	<text>Target Minion skips its next attack.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Dirty Fighting</name>
+	<cardtype>Trait
+		<subtype>Martial</subtype>
+	</cardtype>
+	<text>Your opponent has -1 Endurance.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Dragonling</name>
+	<cardtype>Minion
+		<subtype>Reptilian</subtype>
+	</cardtype>
+	<text>You may pay (2) for this to attack.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Skink</name>
+	<cardtype>Minion
+		<subtype>Reptilian</subtype>
+	</cardtype>
+	<text>Whenever an ally attacks, this attacks the same target.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Scale Block</name>
+	<cardtype>Action
+		<subtype>Reptilian Defense</subtype>
+	</cardtype>
+	<text>Prevent the next damage that you would suffer.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Dragonbreath</name>
+	<cardtype>Action
+		<subtype>Fire Attack</subtype>
+	</cardtype>
+	<text>Deal 3 damage.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Slayer</name>
+	<cardtype>Minion
+		<subtype>Slayer</subtype>
+	</cardtype>
+	<text>Can attack once per turn. Deals 2 damage with attacks.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Hatred</name>
+	<cardtype>Trait
+		<subtype>Hatred</subtype>
+	</cardtype>
+	<text>Deal 1 damage to all players each turn.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Vendetta</name>
+	<cardtype>Action
+		<subtype>Hatred Attack</subtype>
+	</cardtype>
+	<text>Deal 1 damage to all Minions.</text>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Bodyguard</name>
+	<cardtype>Minion
+		<subtype>Tank</subtype>
+	</cardtype>
+	<text>Intercepts damage.</text>
+	<stats>
+		<hp>4</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Armor Mastery</name>
+	<cardtype>Trait
+		<subtype>Ability</subtype>
+	</cardtype>
+	<text>Your Armor cards cost (1) less.</text>
+</card>
+<card>
+	<name>Shield Block</name>
+	<cardtype>Action
+		<subtype>Shield Defense</subtype>
+	</cardtype>
+	<text>Prevent the next damage you would suffer. Draw a card.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Stoic Stance</name>
+	<cardtype>Trait
+		<subtype>Defense Stance</subtype>
+	</cardtype>
+	<text>Your Minions have +1 HP.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Pin</name>
+	<cardtype>Action
+		<subtype>Unarmed Attack</subtype>
+	</cardtype>
+	<text>Target Minion can no longer attack.</text>
+	<cost>5</cost>
+</card>
+<card>
+	<name>Enclose</name>
+	<cardtype>Action
+		<subtype>Trap</subtype>
+	</cardtype>
+	<text>Target Minion and the Minions next to it skip their next attack.</text>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Warrior</name>
+	<cardtype>Minion
+		<subtype>Warrior</subtype>
+	</cardtype>
+	<text>Can attack once per turn.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Spellbreak</name>
+	<cardtype>Action
+		<subtype>Null</subtype>
+	</cardtype>
+	<text>Cancel the next Magical card played.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Antimagic Field</name>
+	<cardtype>Trait
+		<subtype>Null</subtype>
+	</cardtype>
+	<text>All Magical cards cost (1) more.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Scout</name>
+	<cardtype>Minion
+		<subtype>Scout</subtype>
+	</cardtype>
+	<text>You get (1) additional Energy each turn.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Messenger</name>
+	<cardtype>Minion
+		<subtype>Scout</subtype>
+	</cardtype>
+	<text>When you play this, draw a card.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Sprint</name>
+	<cardtype>Action
+		<subtype>Scout</subtype>
+	</cardtype>
+	<text>You get +6 Speed this turn only.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Recon</name>
+	<cardtype>Action
+		<subtype>Scout</subtype>
+	</cardtype>
+	<text>Look at the top card of your deck. You may move it to your discard pile.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Acolyte</name>
+	<cardtype>Minion
+		<subtype>Monk</subtype>
+	</cardtype>
+	<text>Whenever you draw a card, this attacks.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Monk</name>
+	<cardtype>Minion
+		<subtype>Monk</subtype>
+	</cardtype>
+	<text>Whenever you reset your deck, this gets +2 HP. Intercepts damage.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Asceticism</name>
+	<cardtype>Trait
+		<subtype>Monk</subtype>
+	</cardtype>
+	<text>Each player draws an extra card each turn/</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Pressure Point</name>
+	<cardtype>Action
+		<subtype>Unarmed Attack</subtype>
+	</cardtype>
+	<text>Deal 1 damage to a Minion. That Minion skips its next attack.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Flurry of Blows</name>
+	<cardtype>Action
+		<subtype>Unarmed Attack</subtype>
+	</cardtype>
+	<text>Deal 1 damage for each card played this turn.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Ninja</name>
+	<cardtype>Minion
+		<subtype>Ninja</subtype>
+	</cardtype>
+	<text>Can attack once per turn as long as you have the most Speed.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Assassinate</name>
+	<cardtype>Action
+		<subtype>Attack</subtype>
+	</cardtype>
+	<text>Destroy a Minion.</text>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Martial Artist</name>
+	<cardtype>Minion
+		<subtype>Martial Artist</subtype>
+	</cardtype>
+	<text>Attacks a random enemy whenever you play an Action.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Student</name>
+	<cardtype>Minion
+		<subtype>Martial Artist</subtype>
+	</cardtype>
+	<text>Intercepts damage. Whenever an ally attacks, this gets +1 HP.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Tutor</name>
+	<cardtype>Action
+		<subtype>Knowledge</subtype>
+	</cardtype>
+	<text>Draw two cards.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Unarmed Strike</name>
+	<cardtype>Action
+		<subtype>Unarmed Strike</subtype>
+	</cardtype>
+	<text>Deal 1 damage. Deal 3 damage instead if you control no Equipment.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Throw</name>
+	<cardtype>Action
+		<subtype>Unarmed Attack</subtype>
+	</cardtype>
+	<text>Return a Minion to its owner's hand</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Traceur</name>
+	<cardtype>Minion
+		<subtype>Traceur</subtype>
+	</cardtype>
+	<text>Intercepts damage. Whenever this suffers damage, it is returned to your hand.</text>
+	<stats>
+		<hp>3</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Maneuver</name>
+	<cardtype>Action
+		<subtype>Parkour</subtype>
+	</cardtype>
+	<text>Return a Trait to its owner's hand.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Resourceful</name>
+	<cardtype>Trait
+		<subtype>Knowledge</subtype>
+	</cardtype>
+	<text>Whenever you reset your deck, draw a card.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Stag</name>
+	<cardtype>Minion
+		<subtype>Stag</subtype>
+	</cardtype>
+	<text>Intercepts damage. When this is destroyed, draw a card.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Owl</name>
+	<cardtype>Minion
+		<subtype>Bird</subtype>
+	</cardtype>
+	<text>Can't be intercepted.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Wolf</name>
+	<cardtype>Minion
+		<subtype>Wolf</subtype>
+	</cardtype>
+	<text>Whenever you reset your deck, this attacks two random enemies.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Purify</name>
+	<cardtype>Action
+		<subtype>Pure</subtype>
+	</cardtype>
+	<text>Destroy all Traits.</text>
+	<cost>5</cost>
+</card>
+<card>
+	<name>Moonlight</name>
+	<cardtype>Action
+		<subtype>Lunar</subtype>
+	</cardtype>
+	<text>Heal each ally 2 HP.</text>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Viper</name>
+	<cardtype>Minion
+		<subtype>Reptilian</subtype>
+	</cardtype>
+	<text>Once per turn, you may pay (1) to poison a Minion.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Hawk</name>
+	<cardtype>Minion
+		<subtype>Bird</subtype>
+	</cardtype>
+	<text>Can attack the enemy with the least HP once per turn. Can't be intercepted.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Sunfire</name>
+	<cardtype>Action
+		<subtype>Fire Magical</subtype>
+	</cardtype>
+	<text>Deal 2 damage to each Minion and each player.</text>
+	<cost>5</cost>
+</card>
+<card>
+	<name>Seismic Strike</name>
+	<cardtype>Action
+		<subtype>Earthen Attack</subtype>
+	</cardtype>
+	<text>Deal 1 damage to a player. That player discards the top card of their deck.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Point-Blank Shot</name>
+	<cardtype>Action
+		<subtype>Puncture Attack</subtype>
+	</cardtype>
+	<text>Deal 3 damage to a leftmost or rightmost Minion.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Snipe</name>
+	<cardtype>Action
+		<subtype>Puncture Attack</subtype>
+	</cardtype>
+	<text>Choose a Minion. Next turn, deal 3 damage to it. Can't be intercepted.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Dual Wielding</name>
+	<cardtype>Trait
+		<subtype>Ability</subtype>
+	</cardtype>
+	<text>You can equip an extra hand's worth of Equipment.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Voodoo</name>
+	<cardtype>Minion
+		<subtype>Voodoo</subtype>
+	</cardtype>
+	<text>Intercepts damage. Whenever this takes damage, each opponent takes that much damage.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Balance</name>
+	<cardtype>Trait
+		<subtype>Magical</subtype>
+	</cardtype>
+	<text>Whenever you suffer damage, deal 1 damage to each opponent.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Bloodletting</name>
+	<cardtype>Action
+		<subtype>Blood</subtype>
+	</cardtype>
+	<text>You suffer 2 damage and draw two cards.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Transfusion</name>
+	<cardtype>Action
+		<subtype>Blood</subtype>
+	</cardtype>
+	<text>Destroy an ally Minion. You gain HP equal to its HP.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Panther</name>
+	<cardtype>Minion
+		<subtype>Feline</subtype>
+	</cardtype>
+	<text>Can attack once per turn. This deals 2 damage each attack. Can't be intercepted.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+	<cost>6</cost>
+</card>
+<card>
+	<name>Ape</name>
+	<cardtype>Minion
+		<subtype>Ape</subtype>
+	</cardtype>
+	<text>When you play this, destroy an Equipment card.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Paladin</name>
+	<cardtype>Minion
+		<subtype>Paladin</subtype>
+	</cardtype>
+	<text>Can attack once per turn. 50% chance to deal 2 damage with an attack.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Smite</name>
+	<cardtype>Action
+		<subtype>Holy Attack</subtype>
+	</cardtype>
+	<text>Destroy a Minion that attacked since your last turn.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Radiance</name>
+	<cardtype>Trait
+		<subtype>Holy Light</subtype>
+	</cardtype>
+	<text>All damage from your sources is treated as coming from a Holy and Light source.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Divine Champion</name>
+	<cardtype>Trait
+		<subtype>Holy</subtype>
+	</cardtype>
+	<text>Your attacks deal 1 additional damage as long as you have a Weapon equipped.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Healer</name>
+	<cardtype>Minion
+		<subtype>Healer</subtype>
+	</cardtype>
+	<text>Once per turn, you may pay (1) to heal an ally 1 HP.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Divine Energy</name>
+	<cardtype>Action
+		<subtype>Holy</subtype>
+	</cardtype>
+	<text>Target an ally or an enemy. Heal the ally 2 HP or deal 2 damage to the enemy.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Stormcaller</name>
+	<cardtype>Trait
+		<subtype>Holy Electric</subtype>
+	</cardtype>
+	<text>Whenever you play an Action card, heal an ally 1 HP or deal 1 damage to an enemy at random.</text>
+	<cost>3</cost>
+</card>
+</root>
