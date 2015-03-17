@@ -490,19 +490,39 @@
 		</category>
 		<category name="Spellcasters">
 			<class name="Wizard">
-
+				<card amt="4">Wizard</card>
+				<card amt="2">Magic Missile</card>
+				<card amt="2">Abjuration</card>
+				<card amt="2">Arcane Savant</card>
 			</class>
 			<class name="Sorcerer">
-
+				<card amt="4">Sorcerer</card>
+				<card amt="2">Fireball</card>
+				<card amt="2">Scythebolt</card>
+				<card amt="2">Pact</card>
 			</class>
 			<class name="Soothsayer">
-
+				<card amt="2">Seer</card>
+				<card amt="2">Sage</card>
+				<card amt="2">Scry</card>
+				<card amt="2">Temporal Oracle</card>
+				<card amt="2">Omen</card>
 			</class>
 			<class name="Mage">
-
+				<card amt="1">Wizard</card>
+				<card amt="1">Sorcerer</card>
+				<card amt="1">Mage</card>
+				<card amt="1">Sage</card>
+				<card amt="2">Magical Aptitude</card>
+				<card amt="2">Fireball</card>
+				<card amt="2">Abjuration</card>
 			</class>
 			<class name="Conjurer">
-
+				<card amt="2">Summoner</card>
+				<card amt="2">Planecaller</card>
+				<card amt="2">Planeswalk</card>
+				<card amt="2">Extraplanar Summons</card>
+				<card amt="2">Binding Ritual</card>
 			</class>
 			<class name="Hexblade">
 
