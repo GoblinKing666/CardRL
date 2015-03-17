@@ -456,16 +456,36 @@
 		</category>
 		<category name="Unholy">
 			<class name="Blackguard">
-
+				<card amt="4">Blackguard</card>
+				<card amt="2">Maul</card>
+				<card amt="2">Shadow Aura</card>
+				<card amt="2">Merciless Killer</card>
 			</class>
 			<class name="Witch">
-
+				<card amt="4">Witch</card>
+				<card amt="2">Negative Energy</card>
+				<card amt="2">Spiderplague</card>
+				<card amt="2">Spindleclaws</card>
 			</class>
 			<class name="Cultist">
-
+				<card amt="4">Cultist</card>
+				<card amt="2">Eldritch Summons</card>
+				<card amt="2">Curse</card>
+				<card amt="2">Damnation</card>
+			</class>
+			<class name="Aberrant Knight">
+				<card amt="2">Horror</card>
+				<card amt="2">Cultist</card>
+				<card amt="2">Eldritch Guise</card>
+				<card amt="2">Abomination</card>
+				<card amt="2">Sacrificial Strike</card>
 			</class>
 			<class name="Sepulchre Knight">
-
+				<card amt="2">Minor Zombie</card>
+				<card amt="2">Sepulchre Knight</card>
+				<card amt="2">Sacrifice of Mortality</card>
+				<card amt="2">Deathforce</card>
+				<card amt="2">Mutilate</card>
 			</class>
 		</category>
 		<category name="Spellcasters">

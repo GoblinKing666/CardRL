@@ -1446,4 +1446,179 @@
 	<text>Choose a player. The next Minion card that player would draw is discarded.</text>
 	<cost>3</cost>
 </card>
+<card>
+	<name>Blackguard</name>
+	<cardtype>Minion
+		<subtype>Blackguard</subtype>
+	</cardtype>
+	<text>Can attack once per turn. 50% chance to inflict bleeding with each attack.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Maul</name>
+	<cardtype>Action
+		<subtype>Unholy Attack</subtype>
+	</cardtype>
+	<text>Destroy a bleeding Minion.</text>
+	<cost>0</cost>
+</card>
+<card>
+	<name>Shadow Aura</name>
+	<cardtype>Trait
+		<subtype>Unholy</subtype>
+	</cardtype>
+	<text>Whenever an enemy Minion suffers damage, inflict bleeding on that Minion.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Merciless Killer</name>
+	<cardtype>Trait
+		<subtype>Unholy</subtype>
+	</cardtype>
+	<text>Whenever an enemy Minion is destroyed, its owner skips the next card they would draw.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Witch</name>
+	<cardtype>Minion
+		<subtype>Witch</subtype>
+	</cardtype>
+	<text>Intercepts damage. Whenever this suffers damage, if a Minion dealt the damage, inflict bleeding on that Minion.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Negative Energy</name>
+	<cardtype>Action
+		<subtype>Unholy</subtype>
+	</cardtype>
+	<text>Target yourself or an opponent. You draw a card or the opponent skips the next card they would draw.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Spiderplague</name>
+	<cardtype>Trait
+		<subtype>Unholy</subtype>
+	</cardtype>
+	<text>Whenever a non-Spider Minion is destroyed, summon a Spider with 1 HP that intercepts damage.</text>
+	<cost>6</cost>
+</card>
+<card>
+	<name>Spindleclaws</name>
+	<cardtype>Trait
+		<subtype>Unholy</subtype>
+	</cardtype>
+	<text>You may attack an extra time each turn. Your attacks inflict bleeding on Minions.</text>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Cultist</name>
+	<cardtype>Minion
+		<subtype>Cultist</subtype>
+	</cardtype>
+	<text>When you play this, return a Minion card from your discard pile to the top of your deck.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Eldritch Summons</name>
+	<cardtype>Action
+		<subtype>Eldritch</subtype>
+	</cardtype>
+	<text>Return a Minion card from your discard pile to play.</text>
+	<cost>5</cost>
+</card>
+<card>
+	<name>Curse</name>
+	<cardtype>Action
+		<subtype>Unholy</subtype>
+	</cardtype>
+	<text>Choose an enemy Minion. From now on, it takes 1 extra damage from attacks.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Damnation</name>
+	<cardtype>Action
+		<subtype>Unholy</subtype>
+	</cardtype>
+	<text>Destroy all Minions.</text>
+	<cost>5</cost>
+</card>
+<card>
+	<name>Horror</name>
+	<cardtype>Minion
+		<subtype>Eldritch</subtype>
+	</cardtype>
+	<text>Can't be targeted by Actions.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Eldritch Guise</name>
+	<cardtype>Trait
+		<subtype>Eldritch</subtype>
+	</cardtype>
+	<text>You can't be targeted by Actions.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Abomination</name>
+	<cardtype>Trait
+		<subtype>Eldritch Fear</subtype>
+	</cardtype>
+	<text>Your opponents draw one fewer card each turn.</text>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Sacrificial Strike</name>
+	<cardtype>Action
+		<subtype>Eldritch Attack</subtype>
+	</cardtype>
+	<text>Destroy an ally Minion to destroy an enemy Minion.</text>
+	<cost>0</cost>
+</card>
+<card>
+	<name>Sepulchre Knight</name>
+	<cardtype>Minion
+		<subtype>Zombie Knight</subtype>
+	</cardtype>
+	<text>When you play this, discard the top 2 cards of your deck. Can attack once per turn.</text>
+	<stats>
+		<hp>2</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Sacrifice of Mortality</name>
+	<cardtype>Trait
+		<subtype>Necrotic</subtype>
+	</cardtype>
+	<text>Each turn, draw 1 extra card and suffer 1 damage.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Deathforce</name>
+	<cardtype>Action
+		<subtype>Necrotic</subtype>
+	</cardtype>
+	<text>Deal 1 damage to a Minion for each card in your discard pile.</text>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Mutilate</name>
+	<cardtype>Action
+		<subtype>Attack</subtype>
+	</cardtype>
+	<text>Destroy a Minion. Its owner discards the top card of their deck.</text>
+	<cost>5</cost>
+</card>
 </root>
