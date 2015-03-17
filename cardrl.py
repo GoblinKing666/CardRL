@@ -533,6 +533,9 @@ while not done:
 			menu.empty()
 			menuhovered.empty()
 			deckbuilder = "initial"
+		elif deckbuilder and optionpicked=="next":
+			deckbuilderpage+=1
+			deckbuilder = "initial"
 		elif ccselect and optionpicked=="Races":
 			ccselect = "initraces"
 		elif ccselect and optionpicked=="Classes":
@@ -622,28 +625,29 @@ while not done:
 
 	if deckbuilder:
 		if deckbuilder=="initial":
+			print "deckbuilderpage is "+str(deckbuilderpage)
 			collectionpane.empty()
 			deckpane.empty()
 			index = 0
+			array = columns*rows
 			for card in collection:
-				if index<(rows*columns)-1:
+				if index<((deckbuilderpage+1)*(rows*columns))-1 and index>((deckbuilderpage)*array)-1:
 					print card.name+" made"
 					modifier = 0
-					if int(math.floor(index/columns))>0:
-						modifier = -1*columns*int(math.floor(index/columns))
-					sprite = CardSprite(card,((acrosspoints*(index+modifier))+(acrosspoints/2),(vertpoints*int(math.floor(index/columns)))+(vertpoints/2)))
+					if int(math.floor((index-(deckbuilderpage*array))/columns))>0:
+						modifier = -1*columns*int(math.floor((index-(deckbuilderpage*array))/columns))
+					sprite = CardSprite(card,((acrosspoints*((index-(deckbuilderpage*array))+modifier))+(acrosspoints/2),(vertpoints*int(math.floor((index-(deckbuilderpage*array))/columns)))+(vertpoints/2)))
 					collectionpane.add(sprite)
 					tweenhelpers.append(TweenHelper(sprite,POSITION_TWEEN,sprite.menuspot,0.1,SLIDE_EASE))
-					index += 1
-				elif index==(rows*columns)-1:
+				elif index==((deckbuilderpage+1)*(rows*columns))-1:
 					print "next page button made"
 					modifier = 0
-					if int(math.floor(index/columns))>0:
-						modifier = -1*columns*int(math.floor(index/columns))
-					sprite = CardSprite(OptionCard("Next Page","next"),((acrosspoints*(index+modifier))+(acrosspoints/2),(vertpoints*int(math.floor(index/columns)))+(vertpoints/2)))
+					if int(math.floor((index-(deckbuilderpage*array))/columns))>0:
+						modifier = -1*columns*int(math.floor((index-(deckbuilderpage*array))/columns))
+					sprite = CardSprite(OptionCard("Next Page","next"),((acrosspoints*((index-(deckbuilderpage*array))+modifier))+(acrosspoints/2),(vertpoints*int(math.floor((index-(deckbuilderpage*array))/columns)))+(vertpoints/2)))
 					collectionpane.add(sprite)
 					tweenhelpers.append(TweenHelper(sprite,POSITION_TWEEN,sprite.menuspot,0.1,SLIDE_EASE))
-					index += 1
+				index += 1
 			deckbuilder = "initialmain"
 
 

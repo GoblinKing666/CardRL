@@ -1544,14 +1544,6 @@
 	<cost>1</cost>
 </card>
 <card>
-	<name>Damnation</name>
-	<cardtype>Action
-		<subtype>Unholy</subtype>
-	</cardtype>
-	<text>Destroy all Minions.</text>
-	<cost>5</cost>
-</card>
-<card>
 	<name>Horror</name>
 	<cardtype>Minion
 		<subtype>Eldritch</subtype>
@@ -1561,6 +1553,14 @@
 		<hp>2</hp>
 	</stats>
 	<cost>3</cost>
+</card>
+<card>
+	<name>Damnation</name>
+	<cardtype>Action
+		<subtype>Unholy</subtype>
+	</cardtype>
+	<text>Destroy all Minions.</text>
+	<cost>5</cost>
 </card>
 <card>
 	<name>Eldritch Guise</name>
