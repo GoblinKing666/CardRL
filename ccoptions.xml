@@ -525,16 +525,30 @@
 				<card amt="2">Binding Ritual</card>
 			</class>
 			<class name="Hexblade">
-
+				<card amt="2">Warrior</card>
+				<card amt="2">Mage</card>
+				<card amt="2">Magic Missile</card>
+				<card amt="2">Slice</card>
+				<card amt="2">Magical Aptitude</card>
 			</class>
 			<class name="Archaeologist">
-
+				<card amt="2">Sphinx</card>
+				<card amt="2">Mummy</card>
+				<card amt="2">Ancient</card>
+				<card amt="2">Identify</card>
+				<card amt="2">Temporal Drift</card>
 			</class>
 			<class name="Psion">
-
+				<card amt="4">Psion</card>
+				<card amt="2">Influence</card>
+				<card amt="2">Telekinesis</card>
+				<card amt="2">Mind Assault</card>
 			</class>
 			<class name="Wilder">
-
+				<card amt="4">Wilder</card>
+				<card amt="2">Insanity</card>
+				<card amt="2">Wild Strike</card>
+				<card amt="2">Erratic Bolt</card>
 			</class>
 		</category>
 		<category name="Assassins">
