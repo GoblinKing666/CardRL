@@ -1621,4 +1621,74 @@
 	<text>Destroy a Minion. Its owner discards the top card of their deck.</text>
 	<cost>5</cost>
 </card>
+<card>
+	<name>Wizard</name>
+	<cardtype>Minion
+		<subtype>Wizard</subtype>
+	</cardtype>
+	<text>When you play this, the next Magical card you play this turn costs (0).</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Magic Missile</name>
+	<cardtype>Action
+		<subtype>Magical Attack</subtype>
+	</cardtype>
+	<text>Deal 1 damage. Draw a card.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Abjuration</name>
+	<cardtype>Action
+		<subtype>Magical Defense</subtype>
+	</cardtype>
+	<text>Prevent the next damage that you would suffer. Draw a card.</text>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Arcane Savant</name>
+	<cardtype>Trait
+		<subtype>Magical</subtype>
+	</cardtype>
+	<text>Whenever you play an Action card, draw a card.</text>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Sorcerer</name>
+	<cardtype>Minion
+		<subtype>Sorcerer</subtype>
+	</cardtype>
+	<text>Intercepts damage. Once per turn, you may pay (1) to deal 1 damage.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>4</cost>
+</card>
+<card>
+	<name>Fireball</name>
+	<cardtype>Action
+		<subtype>Magical Fire Attack</subtype>
+	</cardtype>
+	<text>Drain your remaining Energy. Deal 1 damage to a random enemy for each Energy drained.</text>
+	<cost>0</cost>
+</card>
+<card>
+	<name>Scythebolt</name>
+	<cardtype>Action
+		<subtype>Magical Edged Attack</subtype>
+	</cardtype>
+	<text>Deal 5 damage to a Minion. This can't kill Minions.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Pact</name>
+	<cardtype>Trait
+		<subtype>Unholy Magical</subtype>
+	</cardtype>
+	<text>Whenever an ally Minion suffers damage, draw a card.</text>
+	<cost>5</cost>
+</card>
 </root>
