@@ -1691,4 +1691,50 @@
 	<text>Whenever an ally Minion suffers damage, draw a card.</text>
 	<cost>5</cost>
 </card>
+<card>
+	<name>Seer</name>
+	<cardtype>Minion
+		<subtype>Soothsayer</subtype>
+	</cardtype>
+	<text>Once per turn, you may look at the top card of your deck.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>2</cost>
+</card>
+<card>
+	<name>Sage</name>
+	<cardtype>Minion
+		<subtype>Soothsayer</subtype>
+	</cardtype>
+	<text>When you play this, look at the top three cards of your deck and put them back in any order.</text>
+	<stats>
+		<hp>1</hp>
+	</stats>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Scry</name>
+	<cardtype>Action
+		<subtype>Magical Sensory</subtype>
+	</cardtype>
+	<text>Look at the top three cards of your deck. Draw one of them and discard the others.</text>
+	<cost>1</cost>
+</card>
+<card>
+	<name>Temporal Oracle</name>
+	<cardtype>Trait
+		<subtype>Temporal</subtype>
+	</cardtype>
+	<text>Reset your deck every turn.</text>
+	<cost>3</cost>
+</card>
+<card>
+	<name>Omen</name>
+	<cardtype>Action
+		<subtype>Magical</subtype>
+	</cardtype>
+	<text>Draw three cards.</text>
+	<cost>5</cost>
+</card>
 </root>
